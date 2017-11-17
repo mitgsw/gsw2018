@@ -9,44 +9,44 @@ body {
     padding: 0;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #video-background {
     /*  making the video fullscreen  */
-    position: fixed;
+    /*position: fixed;*/
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-height: 100vh;
+    /*width: auto;*/
+    /*height: auto;*/
     z-index: -100;
 }
 
+.brand {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 0.8em;
+}
+
 #logo {
-    width: 100%;
+    width: 300px;
     margin: 0 auto;
-    margin-top: -5%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 #section1 {
-    /*padding: 30px 20px;*/
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(white, white, #dd4f33); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white, white, #dd4f33); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white, white, #dd4f33); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white, white, #dd4f33); /* Standard syntax */
-    padding-bottom: 200px;
+    background-color: white;
 }
 
 .section{
-    padding: 5% 10%;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 2em;
+    padding: 5% 20%;
+    font-size: 1.4em;
 }
 .section-header {
-    font-family: 'Work Sans', sans-serif;
     font-size: 2em;
     font-weight: 700;
     margin-top: 30px;
@@ -71,7 +71,6 @@ body {
     padding-top: 100px;
 }
 .number-section{
-    font-family: 'Roboto Mono';
     font-size:3em;
     display: inline-block;
     margin-right: 9%;
@@ -84,4 +83,60 @@ body {
 
 .number-label{
     color: white;
+}
+
+.parallax-text{
+    font-size: 4em;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    line-height: 400px;
+}
+
+.brand-text{
+    color: white;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.brand-subtitle{
+    color: white;
+    font-size: 2.6em;
+    font-weight: 500;
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.brand-title{
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.brand-highlight{
+    background-color: red;
+    padding: 10px;
+}
+
+.brand-button{
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 0px;
+    font-size: 2.5em;
+    padding: 5px 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.brand-button:hover {
+    opacity: 0.8;
 }
