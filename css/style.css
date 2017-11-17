@@ -26,16 +26,16 @@ body {
 
 .brand {
     position: absolute;
-    top: 30%;
-    left: 15%;
-    font-size: 0.8em;
+    top: 5%;
+    left: 5%;
+    font-size: 0.6em;
 }
 
 #logo {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 #section1 {
@@ -103,7 +103,7 @@ body {
 
 .brand-subtitle{
     color: white;
-    font-size: 2.6em;
+    font-size: 2.4em;
     font-weight: 500;
     font-style: italic;
     margin-top: 15px;
@@ -114,8 +114,8 @@ body {
     color: white;
     font-size: 3em;
     font-weight: 700;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 60px;
+    margin-bottom: 10px;
 }
 
 .brand-highlight{
@@ -128,13 +128,21 @@ body {
     color: white;
     border: 3px solid white;
     border-radius: 0px;
-    font-size: 2.5em;
+    font-size: 1.7em;
     padding: 5px 10px;
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 15px;
     margin-bottom: 15px;
     letter-spacing: 2px;
+}
+
+.brand-theme {
+    color: white;
+    font-size: 9em;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .brand-button:hover {
@@ -147,4 +155,26 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#countdown {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.timeblock {
+    display: inline-block;
+    float: left;
+    margin-left: 30px;
+}
+
+.time-label{
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #dd4f33;
 }
