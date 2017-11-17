@@ -140,3 +140,11 @@ body {
 .brand-button:hover {
     opacity: 0.8;
 }
+
+.partner-logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
