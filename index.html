@@ -2,20 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mobilize | STU 1231</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>MIT GSW 2018 | MIT Global Startup Workshop</title>
+    <link rel="shortcut icon" href="http://gsw.mit.edu/2018/favicon.ico" />
+    <link rel="stylesheet" href="splash/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700,800,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/0b972b6cf8.js"></script>
-    <script src="js/parallax.js"></script>
+    <link rel="stylesheet" href="splash/css/style.css">
+    <link href="https://use.fontawesome.com/0b972b6cf8.css" media="all" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
+<div class="banner">
+    <div id="partner-icons">
+        <img src="splash/img/logos/sasin.png" class="partner-icon" id="sasin_logo">
+        <img src="splash/img/logos/mitthailand.png" class="partner-icon">
+        <div id="countdown">
+            <div class="timeblock">125<div class="time-label">days</div></div><div class="timeblock">16<div class="time-label">hours</div></div><div class="timeblock">23<div class="time-label">minutes</div></div><div class="timeblock">53<div class="time-label">seconds</div></div>
+        </div>
+    </div>
+
+
+    <div class="brand">
+        <img src="splash/img/logo.png" id="logo">
+        <div class="brand-theme">
+            dream <span class="brand-highlight">big.</span><br>
+            dream <span class="brand-highlight">tech.</span>
+        </div>
+
+        <div class="brand-title">tools for innovation-driven entrepreneurship</div>
+        <div class="brand-subtitle">in partnership with Sasin School of Management and MIT Association of Thailand</div>
+        <div class="brand-text"><span class="brand-highlight">Bangkok, Thailand</span></div>
+        <div class="brand-text"><span class="brand-highlight">26-28 March, 2018</span></div>
+    </div>
+
+    <video id="video-background" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/img/Splash.mp4"></video>
+
+    <div class="countdown-wrapper">
+        <button id="btnNewsletter" type="button" class="brand-button">Subscribe to our newsletter</button>
+    </div>
+</div>
+
+<div id="newsletter_section" class="section">
+    <div class="section-header">Subscribe to our newsletter</div>
+    <p>Don't miss any news about MIT GSW 2018! We promise we won't spam you.</p>
+    <form method="post" class="form-inline" action="http://gsw.mit.edu/wordpress/?na=s" onsubmit="return newsletter_check(this)">
+        <div class="form-group">
+            <input class="form-control" type="email" name="ne" placeholder="Email" required>
+            <input class="form-control" type="submit" value="Subscribe">
+        </div>
+    </form>
+</div>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax2.png" id="section2">
+    <div class="parallax-text">
+        <span class="hidden-xs">Our</span> Partners
+    </div>
+</div>
+<div id="section1" class="section">
+    <div class="section-header">We're proud to bring these organizations on board with us</div>
+    <br>
+    <div class="row text-center">
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/mitthailand.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/sasin.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/reap.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/legatum.png"></div>
+    </div>
+</div>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax1.png" id="section2">
+    <div class="parallax-text">
+        Connect <span class="hidden-xs">with Us</span>
+    </div>
+</div>
+
+<div id="section1" class="section">
+    <div class="row text-center">
+        <div class="col-xs-4 col-md-offset-3 col-md-2"><a href="https://twitter.com/MITGSW"><span class="fa fa-twitter-square sm-icon"></span></a></div>
+        <div class="col-xs-4 col-md-2"><a href="https://www.facebook.com/MITGSW/"><span class="fa fa-facebook-square sm-icon"></span></a></div>
+        <div class="col-xs-4 col-md-2"><a href="mailto:gsw-tech@mit.edu"><span class="fa fa-envelope-square sm-icon"></span></a></div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="splash/js/bootstrap.min.js"></script>
+<script src="splash/js/parallax.js"></script>
 <script>
+    /* COUNTDOWN */
     // Set the date we're counting down to
-    var countDownDate = new Date(Date.UTC(2018, 3, 26, 0, 0, 0)).getTime();
+    var countDownDate = new Date(Date.UTC(2018, 2, 26, 0, 0, 0)).getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -45,138 +119,13 @@
             $("#countdown").html = "";
         }
     }, 1000);
+
+    /* Newsletter button */
+    $( "#btnNewsletter" ).click(function() {
+        $('html, body').animate({
+            scrollTop: $("#newsletter_section").offset().top
+        }, 1500);
+    });
 </script>
-
-<div id="countdown"></div>
-<div id="partner-icons">
-    <img src="img/logos/sasin.png" class="partner-icon"></img>
-    <img src="img/logos/mitthailand.png" class="partner-icon"></img>
-</div>
-
-<div class="brand">
-    <img src="img/logo.png" id="logo">
-    <div class="brand-theme">
-        dream <span class="brand-highlight">big.</span><br>
-        dream <span class="brand-highlight">tech.</span>
-    </div>
-
-    <div class="brand-title">tools for innovation-driven entrepreneurship</div>
-    <div class="brand-subtitle">in partnership with Sasin University and MIT AA Thailand</div>
-    <div class="brand-text"><span class="brand-highlight">Bangkok, Thailand</span></div>
-    <div class="brand-text"><span class="brand-highlight">26-28 March, 2018</span></div>
-    <a href="/"><button type="button" class="brand-button">Subscribe to our newsletter</button></a>
-</div>
-
-<video  autoplay loop id="video-background" muted plays-inline src="img/Splash.mp4"></video>
-
-<!--<div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax1.png" id="section2">-->
-    <!--<div class="parallax-text">-->
-        <!--Why attend?-->
-    <!--</div>-->
-<!--</div>-->
-
-<!--<div id="section1" class="section">-->
-    <!--<div class="section-header">section header</div>-->
-    <!--<br>-->
-<!--</div>-->
-
-<!--<div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax1.png" id="section2">-->
-    <!--<div id="numbers">-->
-        <!--<div class="number-section">-->
-            <!--<div class="number">500+</div>-->
-            <!--<div class="number-label">participants</div>-->
-        <!--</div>-->
-        <!--<div class="number-section">-->
-            <!--<div class="number">3</div>-->
-            <!--<div class="number-label">days</div>-->
-        <!--</div>-->
-        <!--<div class="number-section">-->
-            <!--<div class="number">15 years</div>-->
-            <!--<div class="number-label">of tradition</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
-<!--<div id="section1" class="section">-->
-    <!--<div class="section-header">FAQs</div>-->
-    <!--<br>-->
-    <!--1) When will registration be open?-->
-    <!--<br>-->
-    <!--Registration for accepted applicants will be open in February.-->
-    <!--<br><br>-->
-    <!--2) Will I have to pay for registration?-->
-    <!--<br>-->
-    <!--Yes. If you are accepted, you will be sent a link to register and pay the registration fee. The registration fee is 7500 INR (100 USD) for students, and 20000 INR (300 USD) for professionals.-->
-    <!--<br><br>-->
-    <!--3) When do we find out about the application outcome?-->
-    <!--<br>-->
-    <!--We encourage you to apply as soon as possible, as we will be evaluating applications on a rolling basis. The first acceptances will be announced mid-January. Don't wait until the last minute. The sooner you apply, the better chances you have of being accepted.-->
-    <!--<br><br>-->
-    <!--4) Will I receive a certificate after participation at the conference?-->
-    <!--<br>-->
-    <!--Yes, absolutely! All participants will receive a certificate and other goodies after participation at the conference.-->
-    <!--<br><br>-->
-    <!--5) Do I have to apply and register as a BPC participant too? Is that a separate thing?-->
-    <!--<br>-->
-    <!--No, you don't have to. BUT if you have a startup and want a chance to win $10K, then you should definitely consider applying to the Business Plan Competition.-->
-    <!--<br><br>-->
-    <!--**Please note: if you apply to BPC, you do not have to apply through the general application, since you are automatically considered for the general application. However, if you apply through the general application, you are NOT automatically considered for BPC.-->
-    <!--<br><br>-->
-    <!--5) If I have attended a GSW in the past, are there ways that I can be more involved?-->
-    <!--<br>-->
-    <!--If you’re a veteran of the Global Startup Workshop, there are two ways you can get more involved:-->
-    <!--<br><br>-->
-    <!--1) Share the GSW with your network-->
-    <!--<br>-->
-    <!--Upload a short 1-2 minute video to YouTube using #MITGSW.<br>-->
-    <!--Send a testimonial about your previous experience to gsw-web@mit.edu.<br>-->
-    <!--Time commitment: 30 minutes.<br><br>-->
-    <!--2) Become a mentor<br>-->
-
-    <!--Share your experience with budding entrepreneurs<br>-->
-    <!--Write to gsw-mentorship@mit.edu.<br>-->
-    <!--Time commitment: 2-3 days during the GSW.<br>-->
-    <!--If you have any questions, write to gsw-web@mit.edu, or simply reply to this email. We look forward to connecting with you, and hope to see you in Hyderabad this spring!<br><br>-->
-<!--</div>-->
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax2.png" id="section2">
-    <div class="parallax-text">
-        Our Partners
-    </div>
-</div>
-
-<div id="section1" class="section">
-    <div class="section-header">We're proud to bring these organizations on board with us</div>
-    <br>
-    <div class="row">
-        <!--<div class="col-md-4"><img class="partner-logo" src="img/logos/martintrustcenter.png"></div>-->
-        <div class="col-md-4"><img class="partner-logo" src="img/logos/mitthailand.png"></div>
-        <div class="col-md-4"><img class="partner-logo" src="img/logos/sasin.png"></div>
-        <div class="col-md-4"><img class="partner-logo" src="img/logos/reap.png"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-4"><img class="partner-logo" src="img/logos/legatum.png"></div>
-        <div class="col-md-4"></div>
-        <div class="col-md-4"></div>
-    </div>
-</div>
-
-
-<div class="parallax-window" data-parallax="scroll" data-image-src="img/parallax1.png" id="section2">
-    <div class="parallax-text">
-        Connect with Us
-    </div>
-</div>
-
-<div id="section1" class="section">
-    <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-2"><a href="https://twitter.com/MITGSW"><span class="fa fa-twitter-square sm-icon"></span></a></div>
-        <div class="col-md-2"><a href="https://www.facebook.com/MITGSW/"><span class="fa fa-facebook-square sm-icon"></span></a></div>
-        <div class="col-md-2"><a href="mailto:gsw-web@mit.edu"><span class="fa fa-envelope-square sm-icon"></span></a></div>
-        <div class="col-md-3"></div>
-    </div>
-</div>
-
-<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
