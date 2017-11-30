@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d8a491e-e51f-4e62-8150-4445019034ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/splash/css/style.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/style.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/splash/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/Splash.mp4" afterPath="$PROJECT_DIR$/splash/img/Splash.mp4" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/dots.png" afterPath="$PROJECT_DIR$/splash/img/dots.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="$PROJECT_DIR$/splash/img/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/legatum.png" afterPath="$PROJECT_DIR$/splash/img/logos/legatum.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/martintrustcenter.png" afterPath="$PROJECT_DIR$/splash/img/logos/martintrustcenter.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/mitthailand.png" afterPath="$PROJECT_DIR$/splash/img/logos/mitthailand.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/mitthailand2.png" afterPath="$PROJECT_DIR$/splash/img/logos/mitthailand2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/reap.png" afterPath="$PROJECT_DIR$/splash/img/logos/reap.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logos/sasin.png" afterPath="$PROJECT_DIR$/splash/img/logos/sasin.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/parallax1.png" afterPath="$PROJECT_DIR$/splash/img/parallax1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/parallax2.png" afterPath="$PROJECT_DIR$/splash/img/parallax2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/splash/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/d3.js" afterPath="$PROJECT_DIR$/splash/js/d3.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.csv.min.js" afterPath="$PROJECT_DIR$/splash/js/jquery.csv.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/splash/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/parallax.js" afterPath="$PROJECT_DIR$/splash/js/parallax.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/parallax.min.js" afterPath="$PROJECT_DIR$/splash/js/parallax.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/splash/img/logos/mitthailand.png" afterPath="$PROJECT_DIR$/splash/img/logos/mitthailand.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -40,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+            <state relative-caret-position="385">
+              <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -77,8 +57,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/splash/css/style.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -126,6 +106,19 @@
               <item name="splash" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gsw2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsw2018" type="462c0819:PsiDirectoryNode" />
+              <item name="splash" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gsw2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gsw2018" type="462c0819:PsiDirectoryNode" />
+              <item name="splash" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="logos" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -172,12 +165,12 @@
       <workItem from="1511207617935" duration="26000" />
       <workItem from="1511286771280" duration="323000" />
       <workItem from="1511465526282" duration="510000" />
-      <workItem from="1512003456992" duration="1054000" />
+      <workItem from="1512003456992" duration="1873000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12171000" />
+    <option name="totallyTimeSpent" value="12990000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="806" extended-state="0" />
@@ -326,8 +319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="50" lean-forward="true" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
+        <state relative-caret-position="385">
+          <caret line="100" column="4" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="4" />
           <folding />
         </state>
       </provider>
