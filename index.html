@@ -14,16 +14,18 @@
 
 <div class="banner">
     <div id="partner-icons">
-        <img src="splash/img/logos/sasinsplash.png" class="partner-icon" id="sasin_logo">
         <img src="splash/img/logos/mitthailand.png" class="partner-icon">
-        <div id="countdown">
-            <div class="timeblock">125<div class="time-label">days</div></div><div class="timeblock">16<div class="time-label">hours</div></div><div class="timeblock">23<div class="time-label">minutes</div></div><div class="timeblock">53<div class="time-label">seconds</div></div>
+        <img src="splash/img/logos/sasinsplash.png" class="partner-icon">
+        
+        <div class="countdown hidden-xs">
+            <div class="timeblock">&nbsp;&nbsp;<div class="time-label">days</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">hours</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">minutes</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">seconds</div></div>
         </div>
     </div>
 
-
     <div class="brand">
-        <img src="splash/img/logo.png" id="logo">
+        <img src="splash/img/logo.png" class="gsw-logo hidden-xs" alt="MIT GSW" />
+        <img src="splash/img/logo_mobile.png" class="gsw-logo visible-xs-block" alt="MIT GSW" />
+
         <div class="brand-theme">
             dream <span class="brand-highlight">big.</span><br>
             dream <span class="brand-highlight">tech.</span>
@@ -42,6 +44,10 @@
     <video id="video-background" class="visible-xs-block" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/splash/img/splash-mobile.mp4"></video>
 
     <div class="countdown-wrapper">
+        <div class="countdown visible-xs-block">
+            <div class="timeblock">&nbsp;&nbsp;<div class="time-label">days</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">hours</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">minutes</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">seconds</div></div>
+        </div>
+
         <button id="btnNewsletter" type="button" class="brand-button">Subscribe to our newsletter</button>
     </div>
 </div>
@@ -57,7 +63,7 @@
     </form>
 </div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax2.png" id="section2">
+<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax2.jpg" id="section2">
     <div class="parallax-text">
         <span class="hidden-xs">Our</span> Partners
     </div>
@@ -66,14 +72,14 @@
     <div class="section-header">We're proud to bring these organizations on board with us</div>
     <br>
     <div class="row text-center">
-        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/mitthailand.png"></div>
         <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/sasin.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/mitthailand.png"></div>
         <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/reap.png"></div>
         <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/legatum.png"></div>
     </div>
 </div>
 
-<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax1.png" id="section2">
+<div class="parallax-window" data-parallax="scroll" data-image-src="splash/img/parallax1.jpg" id="section2">
     <div class="parallax-text">
         Connect <span class="hidden-xs">with Us</span>
     </div>
@@ -81,9 +87,21 @@
 
 <div id="section1" class="section">
     <div class="row text-center">
-        <div class="col-xs-4 col-md-offset-3 col-md-2"><a href="https://twitter.com/MITGSW"><span class="fa fa-twitter-square sm-icon"></span></a></div>
-        <div class="col-xs-4 col-md-2"><a href="https://www.facebook.com/MITGSW/"><span class="fa fa-facebook-square sm-icon"></span></a></div>
-        <div class="col-xs-4 col-md-2"><a href="mailto:gsw-tech@mit.edu"><span class="fa fa-envelope-square sm-icon"></span></a></div>
+        <div class="col-xs-4 col-md-offset-1 col-md-2">
+            <a href="https://twitter.com/MITGSW"><span class="fa fa-twitter-square sm-icon"></span></a>
+        </div>
+        <div class="col-xs-4 col-md-2">
+            <a href="https://www.facebook.com/MITGSW/"><span class="fa fa-facebook-square sm-icon"></span></a>
+        </div>
+        <div class="col-xs-4 col-md-2">
+            <a href="https://www.instagram.com/MITGSW/"><span class="fa fa-instagram sm-icon"></span></a>
+        </div>
+        <div class="col-xs-4 col-xs-offset-2 col-md-offset-0 col-md-2">
+            <a href="https://www.linkedin.com/groups/4117846"><span class="fa fa-linkedin-square sm-icon"></span></a>
+        </div>
+        <div class="col-xs-4 col-md-2">
+            <a href="mailto:gsw-tech@mit.edu"><span class="fa fa-envelope-square sm-icon"></span></a>
+        </div>
     </div>
 </div>
 
@@ -92,9 +110,9 @@
 <script src="splash/js/parallax.js"></script>
 <script>
     /* COUNTDOWN */
-    // Set the date we're counting down to
-    var countDownDate = new Date(Date.UTC(2018, 2, 26, 0, 0, 0)).getTime();
-
+    // Set the date we're counting down to (Thailand is UTC+7)
+    var countDownDate = new Date(Date.UTC(2018, 2, 26, 1, 0, 0)).getTime(); // 8AM
+    
     // Update the count down every 1 second
     var x = setInterval(function() {
 
@@ -110,8 +128,8 @@
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="demo"
-        $("#countdown").html(
+        // Display the result in the following element
+        $(".countdown").html(
             "<div class='timeblock'>" + days + "<div class='time-label'>days</div></div>"
             + "<div class='timeblock'>" + hours + "<div class='time-label'>hours</div></div>"
             + "<div class='timeblock'>" + minutes + "<div class='time-label'>minutes</div></div>"
@@ -120,7 +138,7 @@
         // If the count down is finished, write some text
         if (distance < 0) {
             clearInterval(x);
-            $("#countdown").html = "";
+            $(".countdown").html = "";
         }
     }, 1000);
 

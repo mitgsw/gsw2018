@@ -43,22 +43,20 @@ body {
     font-size: 0.6em;
 }
 
-#logo {
+.gsw-logo {
     width: 250px;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
-    display: block;
 }
 @media only screen and (min-width: 480px) {
-    #logo {
-        display: initial;
+    .gsw-logo {
         width: 400px;
     }
 }
 @media only screen and (min-width: 768px) {
-    #logo {
+    .gsw-logo {
         margin-bottom: 50px;
     }
 }
@@ -210,6 +208,7 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 20px;
     margin-right: 10px;
     letter-spacing: 2px;
 }
@@ -261,7 +260,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     position: relative;
-    bottom: 200px;
+    bottom: 120px;
     left: 5%;
     width: 90%;
     display: block;
@@ -269,21 +268,19 @@ body {
 @media only screen and (min-width: 768px) {
     .countdown-wrapper {
         font-size: 25px;
-        bottom: 85px;
+        bottom: 105px;
         right: 5%;
     }
 }
 
-#countdown {
+.countdown {
     margin-right: 5%;
-    /*margin-: -15px;*/
-    float: right;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
-    #countdown {
+    .countdown {
         float: right;
         bottom: 85px;
         font-size: 25px;
@@ -321,9 +318,6 @@ body {
     display: inline-block;
     margin-right: 15px;
     float: right;
-}
-#sasin_logo.partner-icon {
-    height: 130px;
 }
 
 #partner-icons {
