@@ -16,24 +16,33 @@ body {
     overflow: hidden;
 }
 
-#video-background {
+.top-background {
     /*  making the video fullscreen  */
     min-width: 100%;
-    max-height: 600px;
+    min-height: 600px;
+    max-height: 700px;
     height: auto;
     z-index: -100;
     pointer-events:none;
 }
 @media only screen and (min-width: 480px) {
-    #video-background {
+    .top-background {
         max-height: initial;
         min-height: 800px;
     }
 }
 @media only screen and (min-width: 768px) {
-    #video-background {
+    .top-background {
         min-height: 100vh;
     }
+}
+.top-background.placeholder {
+    z-index: -150;
+    position: absolute;
+    background: black;
+    color: #6dcafa;
+    top: 0;
+    bottom: 0;
 }
 
 .brand {
@@ -271,6 +280,10 @@ body {
         bottom: 105px;
         right: 5%;
     }
+}
+
+.countdown-wrapper .countdown {
+    margin-left: -12px;
 }
 
 .countdown {

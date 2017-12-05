@@ -37,18 +37,23 @@
         <div class="brand-text"><span class="brand-highlight">26-28 March, 2018</span></div>
     </div>
 
-    <!-- Full-size video -->
-    <video id="video-background" class="hidden-xs" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/splash/img/Splash.mp4"></video>
+    <!-- Image while loading -->
+    <img class="top-background visible-xs-block" src="splash/img/top_background_mobile.jpg" />
 
-    <!-- Small-size video -->
-    <video id="video-background" class="visible-xs-block" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/splash/img/splash-mobile.mp4"></video>
+    <!-- Full-size video -->
+    <video class="top-background hidden-xs" preload="none" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/splash/img/Splash.mp4"></video>
 
     <div class="countdown-wrapper">
-        <div class="countdown visible-xs-block">
-            <div class="timeblock">&nbsp;&nbsp;<div class="time-label">days</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">hours</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">minutes</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">seconds</div></div>
+        <div class="row">
+            <div class="countdown visible-xs-block col-xs-12">
+                <div class="timeblock">&nbsp;&nbsp;<div class="time-label">days</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">hours</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">minutes</div></div><div class="timeblock">&nbsp;&nbsp;<div class="time-label">seconds</div></div>
+            </div>
         </div>
-
-        <button id="btnNewsletter" type="button" class="brand-button">Subscribe to our newsletter</button>
+        <div class="row">
+            <div class="col-xs-12">
+                <button id="btnNewsletter" type="button" class="brand-button">Subscribe to our newsletter</button>
+            </div>
+        </div>
     </div>
 </div>
 
