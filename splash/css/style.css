@@ -63,13 +63,10 @@ body {
     }
 }
 
-#section1 {
-    background-color: white;
-}
-
 .section {
     padding: 40px 20%;
     font-size: 1em;
+    background-color: white;
 }
 @media only screen and (min-width: 480px) {
     .section {
@@ -346,4 +343,56 @@ body {
 
 .bottom-row {
     bottom: 5%;
+}
+
+.header {
+    min-height: 100vh !important;
+    font-size: 1.5em;
+}
+@media only screen and (min-width: 480px) {
+    .header {
+        min-height: 400px !important;
+    }
+}
+
+
+.navbar {
+    background: rgba(10,28,63,1);
+    background: -moz-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,28,63,1)), color-stop(25%, rgba(8,21,47,1)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1c3f', endColorstr='#000000', GradientType=0 );
+    border: none;
+    height: 150px;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+#navbar-logo {
+    height: 80px;
+    transition:height 0.3s ease-out;
+    margin-top: -20px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>.active> a:hover, .navbar-default .navbar-nav>li>a:hover {
+    color: rgba(255,255,255,0.8);
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: rgba(255,255,255,0.5);
+}
+
+.navbar-brand-small {
+    height: 60px !important;
 }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIT Global Startup Workshop | Bangkok, Thailand, 2018</title>
+    <link rel="shortcut icon" href="http://gsw.mit.edu/2018/favicon.ico" />
+    <link rel="stylesheet" href="splash/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="splash/css/style.css">
+    <link href="https://use.fontawesome.com/0b972b6cf8.css" media="all" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+
+
+<!-- GENERIC HEADER -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="splash/img/logo.png" id="navbar-logo"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Conference Information<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Registration</a></li>
+                <li><a href="#">Schedule</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">MIT GSW</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Advisory Board</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Team</a>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/header1.jpg">
+    <div class="parallax-text">
+        <span class="hidden-xs">Generic Title</span>
+    </div>
+</div>
+<div class="section header-section">
+    <div class="section-header">Generic Section Description</div>
+    <br>
+    asdadasdadsas
+</div>
+<!-- END GENERIC HEADER -->
+
+
+
+
+
+<!-- GENERIC SECTION - TEXT -->
+<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/header2.jpg">
+    <div class="parallax-text">
+        <span class="hidden-xs">Generic Title</span>
+    </div>
+</div>
+<div class="section">
+    <div class="section-header">Generic Image Section</div>
+    <br>
+    <div class="row text-center">
+        <div class="team col-sm-6 col-md-3"><img class="team-picture" src="splash/img/logos/mitthailand.png">Team Name</div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/sasin.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/reap.png"></div>
+        <div class="col-sm-6 col-md-3"><img class="partner-logo" src="splash/img/logos/legatum.png"></div>
+    </div>
+</div>
+<!-- END GENERIC TEXT SECTION -->
+
+<!--<script>-->
+    <!--var speakers = [-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"mit.png"},-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"harvard.svg"},-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"MIT"},-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"MIT"},-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"MIT"},-->
+        <!--{name:"Firstname Lastname", imgpath:"splash/img/logos/legatum.png", association:"MIT"}-->
+    <!--]-->
+    <!--var rows = speakers.length/4;-->
+    <!--for (var i = 0; i < rows; i++){-->
+        <!--var markup = '<div class="row text-center">';-->
+        <!--for (var j = 0; j < 4; j++){-->
+            <!--markup +=-->
+        <!--}-->
+    <!--}-->
+<!--</script>-->
+
+
+
+
+<!-- GENERIC SECTION - IMAGES -->
+
+<!-- END GENERIC SECTION - IMAGES -->
+
+
+
+
+
+
+<!-- GENERIC SECTION - FOOTER -->
+
+<!-- END GENERIC SECTION - FOOTER -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="splash/js/bootstrap.min.js"></script>
+<script src="splash/js/parallax.js"></script>
+<script>
+    $(document).scroll(function () {
+        console.log("calling function")
+        var scrollPos = $(document).scrollTop();
+        if (scrollPos > 250) {
+            console.log("adding class");
+            $('#navbar-logo').addClass('navbar-brand-small');
+        } else {
+            console.log("removing class");
+            $('#navbar-logo').removeClass('navbar-brand-small');
+        }
+    });
+</script>
+
+</body>
+</html>
