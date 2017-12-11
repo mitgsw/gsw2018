@@ -16,24 +16,33 @@ body {
     overflow: hidden;
 }
 
-#video-background {
+.top-background {
     /*  making the video fullscreen  */
     min-width: 100%;
-    max-height: 600px;
+    min-height: 600px;
+    max-height: 700px;
     height: auto;
     z-index: -100;
     pointer-events:none;
 }
 @media only screen and (min-width: 480px) {
-    #video-background {
+    .top-background {
         max-height: initial;
         min-height: 800px;
     }
 }
 @media only screen and (min-width: 768px) {
-    #video-background {
+    .top-background {
         min-height: 100vh;
     }
+}
+.top-background.placeholder {
+    z-index: -150;
+    position: absolute;
+    background: black;
+    color: #6dcafa;
+    top: 0;
+    bottom: 0;
 }
 
 .brand {
@@ -43,34 +52,32 @@ body {
     font-size: 0.6em;
 }
 
-#logo {
+.gsw-logo {
     width: 250px;
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 30px;
-    display: block;
 }
 @media only screen and (min-width: 480px) {
-    #logo {
-        display: initial;
+    .gsw-logo {
         width: 400px;
     }
 }
 @media only screen and (min-width: 768px) {
-    #logo {
+    .gsw-logo {
         margin-bottom: 50px;
     }
 }
 
 .section {
-    padding: 40px 20%;
+    padding: 40px 15%;
     font-size: 1em;
     background-color: white;
 }
 @media only screen and (min-width: 480px) {
     .section {
-        padding: 70px 20%;
+        padding: 70px 15%;
         font-size: 1.4em;
     }
 }
@@ -79,10 +86,23 @@ body {
     font-size: 1em;
     font-weight: 700;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 @media only screen and (min-width: 480px) {
     .section-header {
         font-size: 2em;
+    }
+}
+
+.section-header-light {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+@media only screen and (min-width: 480px) {
+    .section-header-light {
+        font-size: 1.7em;
     }
 }
 
@@ -207,6 +227,7 @@ body {
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-top: 20px;
     margin-right: 10px;
     letter-spacing: 2px;
 }
@@ -258,7 +279,7 @@ body {
     font-size: 20px;
     font-weight: 600;
     position: relative;
-    bottom: 200px;
+    bottom: 120px;
     left: 5%;
     width: 90%;
     display: block;
@@ -266,21 +287,23 @@ body {
 @media only screen and (min-width: 768px) {
     .countdown-wrapper {
         font-size: 25px;
-        bottom: 85px;
+        bottom: 105px;
         right: 5%;
     }
 }
 
-#countdown {
+.countdown-wrapper .countdown {
+    margin-left: -12px;
+}
+
+.countdown {
     margin-right: 5%;
-    /*margin-: -15px;*/
-    float: right;
     color: white;
     font-size: 20px;
     font-weight: 600;
 }
 @media only screen and (min-width: 768px) {
-    #countdown {
+    .countdown {
         float: right;
         bottom: 85px;
         font-size: 25px;
@@ -319,9 +342,6 @@ body {
     margin-right: 15px;
     float: right;
 }
-#sasin_logo.partner-icon {
-    height: 130px;
-}
 
 #partner-icons {
     display: none;
@@ -356,6 +376,8 @@ body {
 }
 
 
+
+/* HEADER CSS */
 .navbar {
     background: rgba(10,28,63,1);
     background: -moz-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(8,21,47,1) 25%, rgba(0,0,0,0) 100%);
@@ -369,6 +391,18 @@ body {
     height: 150px;
     padding: 20px;
     text-transform: uppercase;
+}
+
+.navbar-condensed {
+    background: rgba(10,28,63,1);
+    background: -moz-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(5,15,33,0.92) 48%, rgba(3,8,18,0.88) 72%, rgba(0,0,0,0.8) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,28,63,1)), color-stop(48%, rgba(5,15,33,0.92)), color-stop(72%, rgba(3,8,18,0.88)), color-stop(100%, rgba(0,0,0,0.8)));
+    background: -webkit-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(5,15,33,0.92) 48%, rgba(3,8,18,0.88) 72%, rgba(0,0,0,0.8) 100%);
+    background: -o-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(5,15,33,0.92) 48%, rgba(3,8,18,0.88) 72%, rgba(0,0,0,0.8) 100%);
+    background: -ms-linear-gradient(top, rgba(10,28,63,1) 0%, rgba(5,15,33,0.92) 48%, rgba(3,8,18,0.88) 72%, rgba(0,0,0,0.8) 100%);
+    background: linear-gradient(to bottom, rgba(10,28,63,1) 0%, rgba(5,15,33,0.92) 48%, rgba(3,8,18,0.88) 72%, rgba(0,0,0,0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a1c3f', endColorstr='#000000', GradientType=0 );
+    height: 90px;
 }
 
 #navbar-logo {
@@ -395,4 +429,140 @@ body {
 
 .navbar-brand-small {
     height: 60px !important;
+}
+
+
+/* SPEAKER CSS */
+.speaker-picture {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.speaker-picture-association{
+    width: 30px;
+    height: auto;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+.speaker-row, .speaker-expanded-bio {
+    margin-bottom: 40px;
+}
+
+.speaker {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.speaker-expanded-text {
+    font-size: 0.7em;
+}
+
+.speaker-expanded-name {
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+
+/* TEAM CSS */
+.team-picture {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.team-name{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.team-association, .team-role{
+    text-align: left;
+}
+
+.team-row, .team-expanded-bio {
+    margin-bottom: 40px;
+}
+
+.team {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.team-expanded-text {
+    font-size: 0.7em;
+}
+
+.team-expanded-name {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+/*#location-1 {*/
+    /*width: 400px;*/
+    /*height: 400px;*/
+/*}*/
+/*#location-2 {*/
+    /*width: 400px;*/
+    /*height: 400px;*/
+/*}*/
+
+.team-expanded-association {
+    margin-bottom: 15px;
+}
+
+/* LOCATION CSS */
+.location-row {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.location-row-hotel {
+    margin-top: 50px;
+}
+
+.location-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dd4f33;
+    margin-bottom: 10px;
+}
+
+.location-name{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black !important;
+    letter-spacing: 2px;
+}
+
+.location-map{
+    margin-top: 20px;
+}
+
+
+/* FOOTER CSS */
+#parallax_social_media {
+    min-height: 200px;
+    margin-top: 100px;
+}
+@media only screen and (min-width: 480px) {
+    #parallax_social_media {
+        max-height: 200px;
+    }
+}
+
+#parallax_social_media_text {
+    line-height: 200px;
+}
+@media only screen and (min-width: 480px) {
+    #parallax_social_media_text {
+        max-height: 100px;
+        line-height: 200px;
+    }
 }
