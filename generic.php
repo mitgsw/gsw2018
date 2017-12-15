@@ -1,4 +1,9 @@
-<?php include("header.php") ?>
+<?php
+	$pageTitle = "MIT Global Startup Workshop 2018";
+	$headerImageSrc = "headers/img/header1.jpg";
+	include("header.php");
+?>
+
 <div class="section" id="speaker-section">
     <div class="section-header">This year, we welcome an esteemed panel of global speakers</div>
     <br>
@@ -261,13 +266,4 @@
     </div>
 </div>
 
-
-<script src="splash/js/bootstrap.min.js"></script>
-<script src="splash/js/parallax.js"></script>
-<script>
-
-</script>
-<!-- END GENERIC SECTION - FOOTER -->
-
-</body>
-</html>
+<?php include("footer.php") ?>
