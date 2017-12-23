@@ -87,6 +87,8 @@ body {
     font-weight: 700;
     margin-top: 30px;
     margin-bottom: 20px;
+
+    /*font-weight: 100;*/
 }
 @media only screen and (min-width: 480px) {
     .section-header {
@@ -106,6 +108,17 @@ body {
     }
 }
 
+.section-header-highlighted{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+.section-header-page{
+    border-bottom: 0.5px solid #0e1e58;
+    padding-bottom: 5px;
+    color: #0e1e58;
+}
 #newsletter_section {
     padding-top: 20px;
 
@@ -430,6 +443,33 @@ body {
 .navbar-brand-small {
     height: 60px !important;
 }
+.main-page-header{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*margin-bottom: 50px;*/
+}
+.imgHeader{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.main-page-header-text{
+    padding-top: 50vh;
+    text-align: center;
+    color: white;
+    padding-bottom: 50vh;
+}
+.main-page-title{
+    font-weight: 700;
+}
+.main-page-Subtitle{
+    font-weight: 100;
+    text-transform: uppercase;
+}
 
 
 /* SPEAKER CSS */
@@ -455,6 +495,7 @@ body {
 .speaker {
     font-size: 0.8em;
     font-weight: 600;
+    color: #515152;
 }
 
 .speaker-expanded-text {
@@ -463,10 +504,23 @@ body {
 
 .speaker-expanded-name {
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 1.2em;
+    color: #515152;
 }
 
+.speaker-expanded-position{
+    margin-bottom: 20px;
+    color: #0e1e58;
+}
+
+.link-to-speaker{
+    color: #515152;
+}
+
+.link-to-speaker:hover, .link-to-speaker:focus{
+    color: #0e1e58;
+}
 
 /* TEAM CSS */
 .team-picture {
