@@ -23,6 +23,43 @@
         </div>
     </div>
 </div>
+<footer>
+    <div class="container">
+        <div class="col-md-12 subscribe">
+            <p class="section-header section-header-footer">Subscribe to our newsletter</p>
+            <p>Don't miss any news about MIT GSW 2018! We promise we won't spam you.</p>
+            <form method="post" class="form-inline" action="http://gsw.mit.edu/wordpress/?na=s" onsubmit="return newsletter_check(this)">
+                <div class="form-group">
+                    <input class="form-control" type="email" name="ne" placeholder="Email" required>
+                    <input class="form-control" type="submit" value="Subscribe">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-4">
+            <p class="footer-title">The Conference</p>
+            <p><a href="index.php">Conference Information</a></p>
+            <p><a href="index.php">Registration</a></p>
+            <p><a href="index.php">Agenda</a></p>
+            <p><a href="speakers.php">Speakers</a></p>
+        </div>
+        <div class="col-md-4">
+            <p class="footer-title">Organization</p>
+            <p><a href="advisory.php">Advisory board</a></p>
+            <p><a href="team.php">Team</a></p>
+            <p><a href="index.php#location">Venue</a></p>
+            <p><a href="team.php">FAQ</a></p>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    <div class="container">
+        <div class="copyright col-md-12">
+            <p>Copyright ©2011–2017 Massachusetts Institute of Technology. All rights reserved.</p>
+            <p>For more information please contact ????</p>
+        </div>
+    </div>
+</footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="splash/js/bootstrap.min.js"></script>

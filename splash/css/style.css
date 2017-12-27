@@ -11,6 +11,14 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    color: rgb(100, 121, 162);
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
 .banner {
     width: 100%;
     overflow: hidden;
@@ -438,11 +446,28 @@ body {
 
 .navbar-default .navbar-nav>li>a {
     color: rgba(255,255,255,0.5);
+    letter-spacing: 0.08em;
+    font-size: 0.9em;
 }
 
 .navbar-brand-small {
     height: 60px !important;
 }
+
+.dropdown-menu{
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 0.08em;
+    font-size: 0.9em;
+    font-weight: 300;
+    background-color: #213356;
+}
+
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+    color: #fff;
+    font-weight: 600;
+}
+
 .main-page-header{
     /*width: 100%;*/
     /*height: 100%;*/
@@ -524,24 +549,36 @@ body {
 
 /* TEAM CSS */
 .team-picture {
-    width: 100%;
+    width: 90%;
     height: auto;
+    border-radius: 50%;
+    /*width: 100%;*/
     margin-bottom: 10px;
 }
 
 .team-name{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 400;
-    text-align: left;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 2px;*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #515152;
 }
 
 .team-association, .team-role{
-    text-align: left;
+    margin-bottom: 20px;
+    color: #0e1e58;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 300;
 }
 
 .team-row, .team-expanded-bio {
     margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .team {
@@ -556,6 +593,14 @@ body {
 .team-expanded-name {
     font-weight: 800;
     font-size: 1.2em;
+}
+
+.team-picture-association{
+    width: 30px;
+    height: auto;
+    top: 5px;
+    left: 5px;
+    position: absolute;
 }
 
 /*#location-1 {*/
@@ -582,17 +627,29 @@ body {
 }
 
 .location-header {
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
-    color: #dd4f33;
+    color: #515152;
     margin-bottom: 10px;
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
 }
 
-.location-name{
+.location-name a{
     text-transform: uppercase;
     font-weight: 400;
-    color: black !important;
-    letter-spacing: 2px;
+    color: #0e1e58;
+    letter-spacing: 0.05em;
+}
+
+.location-address {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.location-address p{
+    font-size: 0.8em;
+    margin-bottom: 0px;
+    line-height: 1.6em;
 }
 
 .location-map{
@@ -601,6 +658,54 @@ body {
 
 
 /* FOOTER CSS */
+footer {
+    background-color: #0A1C3F;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-header-footer{
+    color: white;
+    text-align: center;
+}
+
+.subscribe {
+    text-align: center;
+    color: rgb(100, 121, 162);
+    margin-bottom: 60px;
+}
+
+.subscribe .form-control {
+    color: rgb(100, 121, 162);
+    background-color: rgba(255,255,255,0);
+    border: 2px solid rgb(100, 121, 162);
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.footer-title{
+    letter-spacing: 0.08em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    color: white;
+}
+footer a:hover, footer-title a:focus {
+    color: #fff;
+    font-weight: 600;
+}
+
+.copyright{
+    text-align: center;
+    color:white;
+    margin-top: 40px;
+}
+
+.copyright p {
+    line-height: 1em;
+    color: rgb(100, 121, 162);;
+}
+
 #parallax_social_media {
     min-height: 200px;
     margin-top: 100px;

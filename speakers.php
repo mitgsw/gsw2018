@@ -5,9 +5,9 @@
 ?>
 
 <div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/header1.jpg">
-    <div class="parallax-text">
+    <h1 class="parallax-text">
         <span class="hidden-xs">Our Speakers</span>
-    </div>
+    </h1>
 </div>
 <!--<div class="section" id="speaker-section">-->
 <!--    <div class="section-header">This year, we welcome an esteemed panel of global speakers</div>-->
@@ -15,16 +15,16 @@
 <!--    <br>-->
 <!--</div>-->
 <div class="section" id="speaker-section-expanded">
-    <div class="section-header section-header-page">About Our Speakers</div>
+    <p class="section-header section-header-page">About Our Speakers</p>
     <div class="row speaker-expanded-bio">
         <div class="col-md-3"></div>
         <div class="col-md-9"></div>
     </div>
 </div>
 
-<script src="splash/js/d3.js"></script>
 <?php
 $scripts .= "
+<script src=\"splash/js/d3.js\"></script>
 <script>
    d3.csv(\"data/speakers.csv\", function(error, speakers) {
       if (error) throw error;
