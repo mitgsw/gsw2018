@@ -6,32 +6,30 @@
 <div class="section header-section">
     <div class="location-row row">
         <div class="col-md-6 col-md-6">
-            <div class="location-header">27th March & 28th March (Day 1 & Day 2)</div>
-            <div class="location-name"><a href="#">Factoria Italia</a></div>
+            <div class="location-header">26th March & 27th March (Day 1 & Day 2)</div>
+            <div class="location-name"><a href="#">Conference venue</a></div>
             <div class="location-address">
-                <p>Av. Italia 850,</p>
-                <p>Santiago, Providencia,</p>
-                <p>Región Metropolitana,</p>
-                <p>Chile</p>
+                <p>Av.</p>
+                <p>Bangkok,</p>
+                <p>Thailand</p>
             </div>
             <div class="location-map" id="location-1">
             </div>
         </div>
         <div class="col-md-6 col-md-6">
-            <div class="location-header">27th March & 28th March (Day 1 & Day 2)</div>
-            <div class="location-name"><a href="#">Factoria Italia</a></div>
+            <div class="location-header">28th March (Day 3)</div>
+            <div class="location-name"><a href="#">Conference venue</a></div>
             <div class="location-address">
-                <p>Av. Italia 850,</p>
-                <p>Santiago, Providencia,</p>
-                <p>Región Metropolitana,</p>
-                <p>Chile</p>
+                <p>Av.</p>
+                <p>Bangkok,</p>
+                <p>Thailand</p>
             </div>
             <div class="location-map" id="location-2">
             </div>
         </div>
     </div>
     <hr>
-    <div class="location-row-hotel row">
+    <div class="location-row-hotel row hide">
         <div class="col-md-6 col-md-6">
             <div class="section-header">Recommended Hotel</div>
             <a href="#"><div class="location-header">Hotel Name</div></a>
@@ -50,6 +48,8 @@
 
 <?php
 $scripts .= "
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAce8nsU3Xl9DUqTfyELOW3sT4hoZZ_nlU&callback=initMap'
+            async defer></script>
     <script>
         var map;
         function initMap() {
@@ -59,9 +59,9 @@ $scripts .= "
             $('.location-map').css('height',height+'px');
 
             var locations = [
-                {coords:{lat: -25.363, lng: 131.044}, id:'location-1', name:'Location 1'},
-                {coords:{lat: -25.363, lng: 131.044}, id:'location-2', name:'Location 1'},
-                {coords:{lat: -25.363, lng: 131.044}, id:'location-hotel', name:'Recommended Hotel'}
+                {coords:{lat: 13.7248936, lng: 100.4930253}, id:'location-1', name:'Location 1'},
+                {coords:{lat: 13.7248936, lng: 100.4930253}, id:'location-2', name:'Location 1'},
+                {coords:{lat: 13.7248936, lng: 100.4930253}, id:'location-hotel', name:'Recommended Hotel'}
             ];
 
             locations.forEach(function(d){
@@ -77,7 +77,5 @@ $scripts .= "
                 });
             });
         }
-    </script>
-    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAce8nsU3Xl9DUqTfyELOW3sT4hoZZ_nlU&callback=initMap'
-            async defer></script>";
+    </script>";
 ?>

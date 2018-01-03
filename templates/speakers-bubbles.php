@@ -4,7 +4,6 @@
     </div>
 </div>
 <div class="section" id="speaker-section">
-<!--    <div class="section-header">This year, we welcome an esteemed panel of global speakers</div>-->
     <div class="section-header section-header-highlighted">An esteemed panel of global speakers</div>
     <br>
     <br>
@@ -12,8 +11,6 @@
 <?php
 $scripts .= "
 <script>
-
-    
    d3.csv(\"data/speakers.csv\", function(error, speakers) {
       if (error) throw error;
    
