@@ -14,9 +14,6 @@
         <p>Our team consists of individuals across all parts of the MIT campus, and is supported by an accomplished advisory board.</p>
     </div>
 </div>
-<div class="section" id="team-section-expanded">
-    <p class="section-header section-header-page">About Our Speakers</p>
-</div>
 
 <?php
 $scripts = "

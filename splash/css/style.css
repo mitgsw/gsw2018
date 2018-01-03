@@ -616,6 +616,70 @@ a:hover, a:focus{
     margin-bottom: 15px;
 }
 
+/*ADVISORY BOARD*/
+
+.advisor-intro-text {
+    margin-bottom: 60px;
+}
+.advisor-picture {
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+    /*width: 100%;*/
+    margin-bottom: 10px;
+}
+
+.advisor-name{
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 2px;*/
+    /*font-weight: 400;*/
+    /*text-align: left;*/
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #515152;
+}
+
+.advisor-association, .advisor-role{
+    margin-bottom: 20px;
+    color: #0e1e58;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 300;
+}
+
+.advisor-row, .advisor-expanded-bio {
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.advisor {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.advisor-expanded-text {
+    font-size: 0.7em;
+}
+
+.advisor-expanded-name {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.advisor-picture-association{
+    width: 30px;
+    height: auto;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+.advisor-expanded-association {
+    margin-bottom: 15px;
+}
+
 /* LOCATION CSS */
 .location-row {
     margin-bottom: 50px;

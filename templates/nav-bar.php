@@ -40,7 +40,7 @@
                     <div id="aboutMenu" class="dropdown-menu" aria-labelledby="navbarDropdown">
 <!--                        <a class="dropdown-item" href="#">About MITGSW</a>-->
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="advisors.php">Advisory Board</a>
+                        <a class="dropdown-item" href="advisoryboard.php">Advisory Board</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="team.php">Team</a>
                     </div>
