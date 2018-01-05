@@ -4,7 +4,7 @@
     include('templates/nav-bar.php');
 ?>
 
-<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/header1.jpg">
+<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/speakers-header-2.jpg">
     <h1 class="parallax-text">
         <span class="hidden-xs">Our Speakers</span>
     </h1>
@@ -33,8 +33,9 @@ $scripts .= "
             if (index < speakers.length){
                 var speaker = speakers[i*totalColumns + j];
                 imageMarkup = '<div class=\'speaker col-sm-6 col-md-3\'>' +
+                    '<a class=\'anchor\' id=\'speaker'+ speaker.id +'\'></a>' +
                     '<img class=\'speaker-picture-association\' src=\'speaker/img/' + speaker.association + '\'/>' +
-                    '<a id=\'speaker'+ speaker.id +'\'><img class=\'speaker-picture\' src=\'speaker/img/' + speaker.imgpath + '\'></a>';
+                    '<img class=\'speaker-picture\' src=\'speaker/img/' + speaker.imgpath + '\'>';
                 markup += imageMarkup + speaker.name + '</div>';
 
                 speakerInfoMarkup = '<div class=\'row speaker-expanded-bio\' id=\'speaker' + speaker.name.replace(' ','') + '\'>' +
