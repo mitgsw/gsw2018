@@ -1,4 +1,4 @@
-<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/header1.jpg">
+<div class="parallax-window header" data-parallax="scroll" data-image-src="headers/img/workshops_big.jpg">
     <div class="parallax-text">
         <span class="hidden-xs">Our Speakers</span>
     </div>

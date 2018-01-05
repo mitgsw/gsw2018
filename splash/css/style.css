@@ -55,7 +55,7 @@ a:hover, a:focus{
 
 .brand {
     position: absolute;
-    top: 5%;
+    top: 25%;
     left: 5%;
     font-size: 0.6em;
 }
@@ -545,6 +545,13 @@ a:hover, a:focus{
 
 .link-to-speaker:hover, .link-to-speaker:focus{
     color: #0e1e58;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
 }
 
 /* TEAM CSS */

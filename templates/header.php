@@ -1,8 +1,25 @@
-<div data-parallax="scroll" class="parallax-window main-page-header" data-image-src=<?= $headerMainPageImageSrc ?>>
-    <div class="main-page-header-text">
-        <h1 class="main-page-title"><?= $headerTitle ?></h1>
-        <h2 class="main-page-Subtitle"><?= $headerSubTitle ?></h2>
+<div data-parallax="scroll" class="parallax-window main-page-header">
+    <!--    <div class="main-page-header-text">-->
+    <!--        <h1 class="main-page-title">--><?//= $headerTitle ?><!--</h1>-->
+    <!--        <h2 class="main-page-Subtitle">--><?//= $headerSubTitle ?><!--</h2>-->
+    <!--    </div>-->
+    <div class="brand">
+
+        <div class="brand-theme">
+            dream <span class="brand-highlight">big.</span><br>
+            dream <span class="brand-highlight">tech.</span>
+        </div>
+
+        <div class="brand-title">tools for innovation-driven entrepreneurship</div>
+        <div class="brand-subtitle">in partnership with Sasin School of Management and the MIT Association of Thailand</div>
+        <div class="brand-text"><span class="brand-highlight">Bangkok, Thailand</span></div>
+        <div class="brand-text"><span class="brand-highlight">26-28 March, 2018</span></div>
     </div>
+    <!-- Image while loading -->
+    <img class="top-background visible-xs-block" src="splash/img/top_background_mobile.jpg" />
+
+    <!-- Full-size video -->
+    <video class="top-background hidden-xs" preload="none" autoplay loop muted="muted" plays-inline="" src="http://gsw-2018.herokuapp.com/splash/img/Splash.mp4"></video>
 </div>
 <div class="section">
     <div class="row">
